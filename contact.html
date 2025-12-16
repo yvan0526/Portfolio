@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset='utf-8'>
+    <title>Yvan Giordano</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <!-- Barre latérale gauche -->
+        <aside>
+            <!-- Logo et nom -->
+            <section>
+                <a href="index.html"><img src="images/logo_contact.png" alt="logo"></a>
+                <h2>Yvan Giordano</h2>
+            </section>
+
+            <hr>
+            
+            <!-- Réseaux sociaux et email -->
+            <section>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/yvan-giordano-370298a9" target="_blank"><img src="images/social_networks/linked-in.webp" alt="LinkedIn" title="LinkedIn" class="icon">#YvanGiordano</a></li>
+                    <li><a href="https://github.com/yvan0526?tab=repositories" target="_blank"><img src="images/social_networks/github.png" alt="Github" title="Github" class="icon">#yvan0526</a></li>
+                </ul>
+
+                <p class="email"><img src="images/social_networks/email.svg" alt="Email" title="Email" class="icon"><a href="contact.html">yvan.giordano@etu.univ-grenoble-alpes.fr</a></p>
+            </section>
+        </aside>
+    </header>
+
+    <main>
+        <!-- Menu de navigation -->
+        <nav>
+            <ul>
+                <li><a class="menu-page title" href="index.html">Accueil</a></li>
+                <li><a class="menu-page title" href="projects.html">Projets</a></li>
+                <li><a class="menu-page active-page title">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section>
+            <h1 class="title">Contactez-moi</h1>
+            <form method="post" action="send_mail.php">
+                <div>
+                    <label for="contact-name">Nom<strong>*</strong> :</label>
+                    <input id="contact-name" type="text" name="name" placeholder="Jean Dupont" required>
+                </div>
+                <div>
+                    <label for="contact-email">E-mail<strong>*</strong> :</label>
+                    <input id="contact-email" type="email" name="email" placeholder="exemple@email.com" required>
+                </div>
+                <div>
+                    <label for="contact-message">Message<strong>*</strong> :</label>
+                    <textarea id="contact-message" name="message" placeholder="Votre message." required></textarea>
+                </div>
+                <div>
+                    <p>*Champs obligatoires</p>
+                    <input class="button" type="submit" value="Envoyer">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

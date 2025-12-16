@@ -1,0 +1,45 @@
+body > header {
+    background-color: $azure-color-2;
+    width: 15rem;
+
+    aside {
+        section:first-child {
+            text-align: center;
+            margin: 1rem;
+            
+            img {
+                max-width: 10rem;
+                max-height: 10rem;
+                width: auto;
+                height: auto;
+            }
+        }
+
+        section:last-child {
+            li {
+                margin-top: .5rem;
+            }
+
+            .email {
+                transform-origin: bottom left;
+                transform: rotate(90deg);
+                margin: 0 0 0 .5rem;
+                white-space: nowrap;
+
+                img {
+                    vertical-align: middle;
+                }
+
+                .icon {
+                    border-color: $light-color;
+                    color: $light-color;
+                }
+            }
+        }
+    }
+
+    hr {
+        width: 90%;
+        border: solid 2px $azure-color-1;
+    }
+}

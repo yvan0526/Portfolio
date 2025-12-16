@@ -1,0 +1,88 @@
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.project {
+    background-color: $azure-color-3;
+    width: min-content;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.02);
+        transition: transform 0.2s ease;
+    }
+}
+
+.project-image {
+    position: relative;
+
+    > a {
+        img {
+            width: 20rem;
+            height: 15rem;
+            object-fit: cover;
+            vertical-align: middle;
+        }
+    }
+
+    ul {
+        display: flex;
+        position: absolute;
+        bottom: .2rem;
+        right: .2rem;
+        background-color: $azure-color-2;
+        margin: .3rem;
+        padding: .3rem;
+        border-radius: 2rem;
+
+        img {
+            margin: 0;
+        }
+
+        li:not(:last-child) {
+            margin-right: .5rem;
+        }
+    }
+
+    .icon:hover {
+        opacity: .5;
+    }
+}
+
+.project-content {
+    background-color: $light-color;
+    padding: 1rem;
+
+    h3 {
+        color: $azure-color-3;
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 0;
+    }
+
+    p {
+        color: $light-color;
+        background-color: $azure-color-3;
+        padding: .5rem;
+        height: 5rem;
+        text-align: justify;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: .2rem;
+        padding: 0;
+    }
+}
+
+.techno-image {
+    max-width: 2rem;
+    max-height: 2rem;
+    width: auto;
+    height: auto;
+}

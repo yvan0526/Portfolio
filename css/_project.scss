@@ -1,0 +1,133 @@
+.project-card {
+    display: none;
+
+    > a {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: .7;
+    }
+
+    > section {
+        background-color: $azure-color-1;
+        padding: 1rem;
+        width: 50vw;
+        max-height: 75vh;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+        transform: translate(-50%, -50%);
+    }
+
+    header {
+        display: flex;
+        background-color: $azure-color-3;
+        padding-bottom: 1rem;
+
+        > img {
+            max-width: 60%;
+            flex-grow: 1;
+            flex-shrink: 0;
+            object-fit: contain;
+            background-color: $azure-color-2;
+        }
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 1rem 0 1rem;
+            flex-grow: 1;
+
+            > ul {
+                li:not(:last-child) {
+                    margin-bottom: .2em;
+                }
+
+                .icon:hover {
+                    opacity: .5;
+                }
+            }
+            
+            .project-technos {
+                .techno-image-big {
+                    max-width: 3rem;
+                    max-height: 3rem;
+                    width: auto;
+                    height: auto;
+                }
+
+                h3 {
+                    font-size: 1.5rem;
+                    text-align: center;
+                    margin: 0;
+                }
+
+                li {
+                    margin-top: .5rem;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    * {
+                        vertical-align: middle;
+                    }
+
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .project-details {
+                * {
+                    vertical-align: middle;
+                }
+
+                p {
+                    margin: 0 0 .5rem 0;
+                    
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .project-technos, .project-summary {
+        background-color: $light-color;
+        padding: .5rem;
+
+        * {
+            color: $azure-color-3;
+        }
+    }
+
+    .project-summary {
+        margin: 0;
+
+        h3 {
+            text-align: center;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        p {
+            text-align: justify;
+            margin: .5rem 0;
+        }
+    }
+}
+
+#workcare:target,
+#portfolio:target,
+#mandelbrot:target,
+#sand:target,
+#demineur:target {
+    display: block;
+}

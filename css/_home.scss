@@ -1,0 +1,115 @@
+#bio {
+    display: flex;
+
+    img {
+        max-width: 15rem;
+        max-height: 15rem;
+        width: auto;
+        height: auto;
+        border: solid 3px $azure-color-3;
+        background-color: $azure-color-1;
+    }
+
+    div {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        background-color: $azure-color-3;
+        margin: 0 0 0 1rem;
+        padding: 1rem;
+    }
+
+    p {
+        color: $light-color;
+        text-align: justify;
+        margin: 0;
+    }
+}
+
+#experiences {
+    display: flex;
+    justify-content: space-between;
+    background-color: $azure-color-3;
+    padding: 1rem;
+
+    li {
+        margin-left: 2rem;
+        list-style-type: decimal;
+
+        p {
+            margin: 0;
+
+            &:first-child {
+                color: $azure-color-3;
+                background-color: $light-color;
+            }
+        }
+    }
+
+    img {
+        max-width: 10rem;
+        max-height: 10rem;
+        width: auto;
+        height: auto;
+        padding: 1rem;
+    }
+
+    ol {
+        background-color: $azure-color-3;
+    }
+}
+
+#skills, #experiences {
+    ul, ol {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+#skills {
+    ul {
+        padding: 1rem;
+        border: solid 3px $azure-color-3;
+
+        &:first-child {
+            border-bottom: dashed 3px $azure-color-3;
+
+            .vertical-separator {
+                border-right: solid 3px $azure-color-2;
+                height: 5rem;
+            }
+        }
+
+        &:last-child {
+            border-top: none;
+        }
+    }
+
+    .skill-image {
+        max-width: 5rem;
+        max-height: 5rem;
+        width: auto;
+        height: auto;
+    }
+
+    .soft-skill {
+        min-width: 6rem;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        background-color: $azure-color-1;
+        padding: 0 .5rem 0 .5rem;
+
+        p {
+            margin: auto;
+            white-space: break-space;
+            width: min-content;
+        }
+    }
+}

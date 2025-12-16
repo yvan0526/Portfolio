@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "IBM Plex Mono";
+  src: url('fonts/IBMPlexMono-Medium.ttf');
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url('fonts/BebasNeueRegular.ttf');
+}
+
+$light-color: #D2C1B6;
+$azure-color-1: #456882;
+$azure-color-2: #234C6A;
+$azure-color-3: #1B3C53;
+$title-font: "Bebas Neue";
+$content-font: "IBM Plex Mono";
+
+* {
+    font-family: $content-font;
+}
+
+.title {
+    font-family: $title-font;
+}
+
+.icon {
+    margin: 0 .5rem 0 .5rem;
+    max-width: 1.5rem;
+    max-height: 1.5rem;
+    width: auto;
+    height: auto;
+}
+
+html, body {
+    min-height: 100vh;
+    height: max-content;
+}
+
+body {
+    display: flex;
+    margin: 0;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+section * {
+    color: $light-color;
+}
+
+h2 {
+    margin: 0;
+}
+
+body > main {
+    background-color: $light-color;
+    flex-grow: 1;
+    
+    section {
+        margin: 1rem;
+    }
+}
+
+a {
+    text-decoration: none;
+
+    img {
+        vertical-align: middle;
+    }
+}
