@@ -274,6 +274,7 @@ nav {
 }
 .project-image ul img {
   margin: 0;
+  border-radius: 2rem;
 }
 .project-image ul li:not(:last-child) {
   margin-right: 0.5rem;
@@ -419,7 +420,8 @@ nav {
 #mandelbrot:target,
 #sand:target,
 #demineur:target,
-#snake:target {
+#snake:target,
+#service-failures:target {
   display: block;
 }
 
