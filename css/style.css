@@ -418,7 +418,8 @@ nav {
 #portfolio:target,
 #mandelbrot:target,
 #sand:target,
-#demineur:target {
+#demineur:target,
+#snake:target {
   display: block;
 }
 
@@ -470,7 +471,7 @@ form div textarea {
   border: none;
   color: black;
 }
-form div input:not(:-moz-placeholder-shown):invalid {
+form div input:not(:-moz-placeholder):invalid {
   color: red;
 }
 form div input:not(:placeholder-shown):invalid {
