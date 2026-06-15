@@ -75,7 +75,8 @@ a {
     }
 }
 
-button {
+.button {
+    display: inline-block;
     color: $light-color;
     background-color: $azure-color-1;
     border: solid 4px $light-color;

@@ -65,7 +65,8 @@ a img {
   vertical-align: middle;
 }
 
-button {
+.button {
+  display: inline-block;
   color: #D2C1B6;
   background-color: #456882;
   border: solid 4px #D2C1B6;
@@ -75,10 +76,10 @@ button {
   width: 15rem;
   cursor: pointer;
 }
-button:hover {
+.button:hover {
   background-color: #234C6A;
 }
-button:active {
+.button:active {
   background-color: #1B3C53;
 }
 
@@ -490,10 +491,11 @@ form div textarea {
   border: none;
   color: black;
 }
-form div input:not(:-moz-placeholder):invalid {
+form div input:not(:-moz-placeholder):invalid, form div textarea:not(:-moz-placeholder):invalid {
   color: red;
 }
-form div input:not(:placeholder-shown):invalid {
+form div input:not(:placeholder-shown):invalid,
+form div textarea:not(:placeholder-shown):invalid {
   color: red;
 }
 form div textarea {
@@ -543,6 +545,9 @@ form div p {
 }
 .wip-section .wip-info h2 {
   margin: 0.5rem 0 0 0;
+}
+.wip-section .button {
+  height: 100%;
 }
 
 @keyframes rotate {

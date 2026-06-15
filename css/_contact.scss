@@ -51,7 +51,8 @@ form {
             color: black;
         }
 
-        input:not(:placeholder-shown):invalid {
+        input:not(:placeholder-shown):invalid,
+        textarea:not(:placeholder-shown):invalid {
             color: red;
         }
 
