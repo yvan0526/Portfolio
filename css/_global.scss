@@ -74,3 +74,22 @@ a {
         vertical-align: middle;
     }
 }
+
+button {
+    color: $light-color;
+    background-color: $azure-color-1;
+    border: solid 4px $light-color;
+    flex-grow: 0;
+    padding: .5rem;
+    font-size: 1.3rem;
+    width: 15rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $azure-color-2;
+    }
+
+    &:active {
+        background-color: $azure-color-3;
+    }
+}

@@ -65,6 +65,23 @@ a img {
   vertical-align: middle;
 }
 
+button {
+  color: #D2C1B6;
+  background-color: #456882;
+  border: solid 4px #D2C1B6;
+  flex-grow: 0;
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  width: 15rem;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #234C6A;
+}
+button:active {
+  background-color: #1B3C53;
+}
+
 body > header {
   background-color: #234C6A;
   width: 15rem;
@@ -491,23 +508,6 @@ form div p {
   padding: 0.5rem;
 }
 
-.button {
-  color: #D2C1B6;
-  background-color: #456882;
-  border: solid 4px #D2C1B6;
-  flex-grow: 0;
-  padding: 0.5rem;
-  font-size: 1.3rem;
-  width: 15rem;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: #234C6A;
-}
-.button:active {
-  background-color: #1B3C53;
-}
-
 .response * {
   text-align: center;
 }
@@ -520,5 +520,36 @@ form div p {
   html, body {
     height: -moz-max-content;
     height: max-content;
+  }
+}
+.wip-section {
+  background-color: #1B3C53;
+  padding: 1rem;
+  margin: 0 10rem 0 10rem;
+  text-align: center;
+}
+.wip-section .wip-info {
+  background-color: #456882;
+  padding: 1rem;
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
+.wip-section .wip-info img {
+  transition-property: transform;
+  animation-name: rotate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.wip-section .wip-info h2 {
+  margin: 0.5rem 0 0 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }/*# sourceMappingURL=style.css.map */

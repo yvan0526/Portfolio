@@ -1,0 +1,30 @@
+.wip-section {
+    background-color: $azure-color-3;
+    padding: 1rem;
+    margin: 0 10rem 0 10rem;
+    text-align: center;
+
+    .wip-info {
+        background-color: $azure-color-1;
+        padding: 1rem;
+        margin: 0 0 1rem 0;
+        text-align: center;
+
+        img {
+            transition-property: transform;
+            animation-name: rotate; 
+            animation-duration: 5s; 
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        h2 {
+            margin: .5rem 0 0 0;
+        }
+    }
+}
+
+@keyframes rotate {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
