@@ -81,7 +81,7 @@ if (!isset($error)) {
             <!-- Réseaux sociaux et email -->
             <section>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/yvan-giordano-370298a9" target="_blank"><img src="images/social_networks/linked-in.webp" alt="LinkedIn" title="LinkedIn" class="icon">#YvanGiordano</a></li>
+                    <li><a href="https://www.linkedin.com/in/yvan-giordano-370298a9" target="_blank"><img src="images/social_networks/linked-in.png" alt="LinkedIn" title="LinkedIn" class="icon">#YvanGiordano</a></li>
                     <li><a href="https://github.com/yvan0526?tab=repositories" target="_blank"><img src="images/social_networks/github.png" alt="Github" title="Github" class="icon">#yvan0526</a></li>
                 </ul>
 
