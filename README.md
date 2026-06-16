@@ -5,7 +5,7 @@ https://yvan0526.github.io/Portfolio/
 
 ## Problèmes connus
 ### Formulaire de contact
-Le formulaire de contact n'est pas disponible car Github Page ne permet pas de faire fonctionner des scripts PHP.
+Le formulaire de contact n'est pas disponible car Github Page ne permet pas l'envoie de formulaire.
 Les credentials du SMTP ont été retirés pour des raisons de sécurité.
 
 ### Problème d'affichage du menu sur Firefox sur Windows
