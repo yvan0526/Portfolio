@@ -1,3 +1,5 @@
+@use 'variables' as var;
+
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -6,7 +8,7 @@
 }
 
 .project {
-    background-color: $azure-color-3;
+    background-color: var.$azure-color-3;
     width: min-content;
     padding: 1rem;
     transition: transform 0.2s ease;
@@ -34,7 +36,7 @@
         position: absolute;
         bottom: .2rem;
         right: .2rem;
-        background-color: $azure-color-2;
+        background-color: var.$azure-color-2;
         margin: .3rem;
         padding: .3rem;
         border-radius: 2rem;
@@ -55,19 +57,19 @@
 }
 
 .project-content {
-    background-color: $light-color;
+    background-color: var.$light-color;
     padding: 1rem;
 
     h3 {
-        color: $azure-color-3;
+        color: var.$azure-color-3;
         font-size: 1.5rem;
         text-align: center;
         margin: 0;
     }
 
     p {
-        color: $light-color;
-        background-color: $azure-color-3;
+        color: var.$light-color;
+        background-color: var.$azure-color-3;
         padding: .5rem;
         height: 5rem;
         text-align: justify;

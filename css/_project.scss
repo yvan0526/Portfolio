@@ -1,3 +1,5 @@
+@use 'variables' as var;
+
 .project-card {
     display: none;
 
@@ -12,7 +14,7 @@
     }
 
     > section {
-        background-color: $azure-color-1;
+        background-color: var.$azure-color-1;
         padding: 1rem;
         width: 50vw;
         max-height: 75vh;
@@ -25,7 +27,7 @@
 
     header {
         display: flex;
-        background-color: $azure-color-3;
+        background-color: var.$azure-color-3;
         padding-bottom: 1rem;
 
         > img {
@@ -33,7 +35,7 @@
             flex-grow: 1;
             flex-shrink: 0;
             object-fit: contain;
-            background-color: $azure-color-2;
+            background-color: var.$azure-color-2;
         }
 
         aside {
@@ -100,11 +102,11 @@
     }
 
     .project-technos, .project-summary {
-        background-color: $light-color;
+        background-color: var.$light-color;
         padding: .5rem;
 
         * {
-            color: $azure-color-3;
+            color: var.$azure-color-3;
         }
     }
 

@@ -1,12 +1,14 @@
+@use 'variables' as var;
+
 h1 {
-    color: $azure-color-3;
+    color: var.$azure-color-3;
     text-align: center;
     font-size: 3rem;
     margin: 3rem 0 0 0;
 }
 
 form, .response {
-    background-color: $azure-color-3;
+    background-color: var.$azure-color-3;
     width: 50vw;
     margin: auto;
     padding: 1rem;
@@ -25,8 +27,8 @@ form {
         }
 
         label {
-            background-color: $light-color;
-            color: $azure-color-3;
+            background-color: var.$light-color;
+            color: var.$azure-color-3;
             text-align: right;
             width: 30%;
             height: 2rem;
@@ -63,7 +65,7 @@ form {
 
         p {
             color: red;
-            background-color: $light-color;
+            background-color: var.$light-color;
             font-size: 1.3rem;
             margin: 0;
             padding: .5rem;

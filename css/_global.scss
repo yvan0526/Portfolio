@@ -1,26 +1,11 @@
-@font-face {
-  font-family: "IBM Plex Mono";
-  src: url('fonts/IBMPlexMono-Medium.ttf');
-}
-
-@font-face {
-  font-family: "Bebas Neue";
-  src: url('fonts/BebasNeueRegular.ttf');
-}
-
-$light-color: #D2C1B6;
-$azure-color-1: #456882;
-$azure-color-2: #234C6A;
-$azure-color-3: #1B3C53;
-$title-font: "Bebas Neue";
-$content-font: "IBM Plex Mono";
+@use 'variables' as var;
 
 * {
-    font-family: $content-font;
+    font-family: var.$content-font;
 }
 
 .title {
-    font-family: $title-font;
+    font-family: var.$title-font;
 }
 
 .icon {
@@ -51,7 +36,7 @@ li {
 }
 
 section * {
-    color: $light-color;
+    color: var.$light-color;
 }
 
 h2 {
@@ -59,7 +44,7 @@ h2 {
 }
 
 body > main {
-    background-color: $light-color;
+    background-color: var.$light-color;
     flex-grow: 1;
     
     section {
@@ -77,9 +62,9 @@ a {
 
 .button {
     display: inline-block;
-    color: $light-color;
-    background-color: $azure-color-1;
-    border: solid 4px $light-color;
+    color: var.$light-color;
+    background-color: var.$azure-color-1;
+    border: solid 4px var.$light-color;
     flex-grow: 0;
     padding: .5rem;
     font-size: 1.3rem;
@@ -87,10 +72,10 @@ a {
     cursor: pointer;
 
     &:hover {
-        background-color: $azure-color-2;
+        background-color: var.$azure-color-2;
     }
 
     &:active {
-        background-color: $azure-color-3;
+        background-color: var.$azure-color-3;
     }
 }

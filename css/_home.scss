@@ -1,3 +1,5 @@
+@use 'variables' as var;
+
 #bio {
     display: flex;
 
@@ -6,8 +8,8 @@
         max-height: 15rem;
         width: auto;
         height: auto;
-        border: solid 3px $azure-color-3;
-        background-color: $azure-color-1;
+        border: solid 3px var.$azure-color-3;
+        background-color: var.$azure-color-1;
     }
 
     div {
@@ -16,13 +18,13 @@
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
-        background-color: $azure-color-3;
+        background-color: var.$azure-color-3;
         margin: 0 0 0 1rem;
         padding: 1rem;
     }
 
     p {
-        color: $light-color;
+        color: var.$light-color;
         text-align: justify;
         margin: 0;
     }
@@ -31,7 +33,7 @@
 #experiences {
     display: flex;
     justify-content: space-between;
-    background-color: $azure-color-3;
+    background-color: var.$azure-color-3;
     padding: 1rem;
 
     li {
@@ -42,8 +44,8 @@
             margin: 0;
 
             &:first-child {
-                color: $azure-color-3;
-                background-color: $light-color;
+                color: var.$azure-color-3;
+                background-color: var.$light-color;
             }
         }
     }
@@ -57,7 +59,7 @@
     }
 
     ol {
-        background-color: $azure-color-3;
+        background-color: var.$azure-color-3;
     }
 }
 
@@ -74,13 +76,13 @@
 #skills {
     ul {
         padding: 1rem;
-        border: solid 3px $azure-color-3;
+        border: solid 3px var.$azure-color-3;
 
         &:first-child {
-            border-bottom: dashed 3px $azure-color-3;
+            border-bottom: dashed 3px var.$azure-color-3;
 
             .vertical-separator {
-                border-right: solid 3px $azure-color-2;
+                border-right: solid 3px var.$azure-color-2;
                 height: 5rem;
             }
         }
@@ -103,7 +105,7 @@
         display: flex;
         align-items: center;
         text-align: center;
-        background-color: $azure-color-1;
+        background-color: var.$azure-color-1;
         padding: 0 .5rem 0 .5rem;
 
         p {

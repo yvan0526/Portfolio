@@ -1,11 +1,13 @@
+@use 'variables' as var;
+
 .wip-section {
-    background-color: $azure-color-3;
+    background-color: var.$azure-color-3;
     padding: 1rem;
     margin: 0 10rem 0 10rem;
     text-align: center;
 
     .wip-info {
-        background-color: $azure-color-1;
+        background-color: var.$azure-color-1;
         padding: 1rem;
         margin: 0 0 1rem 0;
         text-align: center;
