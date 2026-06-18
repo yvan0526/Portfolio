@@ -85,7 +85,7 @@ if (!isset($error)) {
                     <li><a href="https://github.com/yvan0526?tab=repositories" target="_blank"><img src="images/social_networks/github.png" alt="Github" title="Github" class="icon">#yvan0526</a></li>
                 </ul>
 
-                <p class="email"><img src="images/social_networks/email.svg" alt="Email" title="Email" class="icon">yvan.giordano@etu.univ-grenoble-alpes.fr</p>
+                <p class="email"><img src="images/social_networks/email.svg" alt="Email" title="Email" class="icon"><a href="mailto:yvan.giordano@etu.univ-grenoble-alpes.fr">yvan.giordano@etu.univ-grenoble-alpes.fr</a></p>
             </section>
         </aside>
     </header>
